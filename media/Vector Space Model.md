@@ -1,5 +1,5 @@
+[toc]
 # Vector Space Model
-
 - IDF Weighting: Penalizing Popular Terms
 - $IDF(W) = \log[(M+1)/K]$ M: total number of docs in collection, k: total number of docs containing W
 - Improved VSM
@@ -27,7 +27,6 @@ $f(q, d) = \sum_{w \in q \cup d}{c(w, q) c(w, d) \log{\frac{M+1}{df(w)}}}$
 $f(q, d) = \sum_{w \in q \cup d}{c(w, q) \frac{(k+1)c(w, d)}{c(w,d) + k} \log{\frac{M+1}{df(w)}}}$  
 
 ## Document Length Normalization
-
 - Penalize a long doc with a doc length normalizer
     - Long doc has a better chance to match any query
     - Need to avoid over-penalization
