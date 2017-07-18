@@ -45,4 +45,14 @@ $$ p(R=1|d,q) \approx p(q|d,R=1)$$
     - Representing topics
     - Discovering word associations
 
+## Query Likelihood Retrieval Function
+Query Generation by Sampling Words from Doc
+![](media/15002774133597.jpg)
+ ![](media/15002775227845.jpg)
+
+**Improved Model: Sampling Words from a Doc Model**
+
+$$f(q, d) = \log p(q|d) = \sum_{w\in V} c(w,q)\log{p(w|d)}$$
+
+
 
